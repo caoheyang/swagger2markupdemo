@@ -1,0 +1,18 @@
+version: '2'        # 表示该docker-compose.yml文件使用的是Version 2 file format
+services:           # Version 2 file format的固定写法，为project定义服务。
+  demo1:                                  # 指定服务名称
+    image: 10.0.0.95:5000/JAVA_Account-Service:0.0.1-SNAPSHOT    # 指定服务所使用的镜像
+    ports:                                                        # 暴露端口信息
+      - "9001:9000"
+  demo2:                                  # 指定服务名称
+      image: 10.0.0.95:5000/JAVA_Account-Service:0.0.1-SNAPSHOT    # 指定服务所使用的镜像
+      ports:                                                        # 暴露端口信息
+      - "9002:9000"
+  demo3:                                  # 指定服务名称
+      image: 10.0.0.95:5000/JAVA_Account-Service:0.0.1-SNAPSHOT    # 指定服务所使用的镜像
+      ports:                                                        # 暴露端口信息
+      - "9003:9000"
+  demo4:                                  # 指定服务名称
+      image: 10.0.0.95:5000/JAVA_Account-Service:0.0.1-SNAPSHOT    # 指定服务所使用的镜像
+      ports:                                                        # 暴露端口信息
+      - "9004:9000"
